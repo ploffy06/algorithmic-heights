@@ -20,8 +20,8 @@ def get_adjacency_list(n, edges):
 
     return adjacency_list
 
-
-n, m, edges = read_data()
-adjacency_list = get_adjacency_list(n, edges)
-degrees = [len(neighbours) for v, neighbours in adjacency_list.items()]
-print(" ".join(list(map(str, degrees))))
+if __name__ == '__main__':
+    n, m, edges = read_data()
+    adjacency_list = get_adjacency_list(n, edges)
+    degrees = [len(neighbours) for v, neighbours in adjacency_list.items()]
+    print(" ".join(list(map(str, degrees))))
