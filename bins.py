@@ -28,11 +28,12 @@ def binary_search(n, arr, target):
 
     return -1
 
-n, m, sorted_arr, int_arr = read_data()
-idx_arr = []
+if __name__ == '__main__':
+    n, m, sorted_arr, int_arr = read_data()
+    idx_arr = []
 
-for num in int_arr:
-    idx = binary_search(n, sorted_arr, num)
-    idx_arr.append(idx)
+    for num in int_arr:
+        idx = binary_search(n, sorted_arr, num)
+        idx_arr.append(idx)
 
-print(" ".join(map(str, idx_arr)))
+    print(" ".join(map(str, idx_arr)))

@@ -6,4 +6,5 @@ def fibo(n):
 
     return fibo(n - 1) + fibo(n - 2)
 
-print(fibo(n=22))
+if __name__ == '__main__':
+    print(fibo(n=22))

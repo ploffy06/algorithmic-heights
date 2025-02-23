@@ -23,6 +23,7 @@ def insertion_sort_swap_count(n, A):
 
     return A, count
 
-n, A = read_data()
-A, count = insertion_sort_swap_count(n, A)
-print(count)
+if __name__ == '__main__':
+    n, A = read_data()
+    A, count = insertion_sort_swap_count(n, A)
+    print(count)

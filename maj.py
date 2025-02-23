@@ -25,6 +25,7 @@ def majority_element_entries(arrs, k):
 
     return majority_elements
 
-n, k, arrs = read_data()
-majority_elements = majority_element_entries(arrs, k)
-print(" ".join(list(map(str, majority_elements))))
+if __name__ == '__main__':
+    n, k, arrs = read_data()
+    majority_elements = majority_element_entries(arrs, k)
+    print(" ".join(list(map(str, majority_elements))))
